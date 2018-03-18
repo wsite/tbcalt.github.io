@@ -4,12 +4,12 @@
 		<title>
 			Kartavya
 		</title>
-		<link rel= "stylesheet" href="../CSS/mno.css">
+		<link rel= "stylesheet" href="CSS/mno.css">
 	</head>
 	<body>
 		<div id="container">
 			<div id="header">
-				<img src="../Images/tbc1.png" alt="TBC" width="800px" height=250px"/>
+				<img src="Images/tbc1.png" alt="TBC" width="800px" height=250px"/>
 			</div>
 			<!--Navigation Bar-->
 			<div id="nav">
@@ -31,15 +31,8 @@
 					</li>	
 				</ul>
 			</div>
-			<div id="content">
-				<h1>About Us</h1>
-				<div class="img">
-					<img src="../Images/trophy.jpg" alt="trophies" height="400px" width="400px"/>
-					<!--Images float on the right and text are displayed on the left of image-->
-					<hr>
-					<h4>Trophies on display at The British College</h4>
-					<hr>
-				</div>
+			<div id="container">
+				<img  name="slide" src="Images/sports1.jpg" width="800" />
 				<p>
 					Why Study at The British College
 					The British College provides world-class education in Nepal for students who need to gain internationally recognised qualifications, from UK Universities. In this regard we have a distinctive identity as the pioneering International College in Nepal. We offer internationally recognised degrees and courses which are relevant to the current job market, enhancing each and every student's employability.
@@ -52,45 +45,36 @@
 					An international university degree, the same as you would get if you were studying in the UK. Business Service, The British College aims to potentially open doors for joint ventures or business partnerships.
 				</p>
 				<p>
-					<h3>Working at TBC</h3>
-					The incredible enthusiasm and dedication of people working at TBC is vital to our current and future success.
-					<table>
-					<tr>
-						<th>Firstname</th>
-						<th>Lastname</th>
-						<th>Postion</th>
-					</tr>
-					<tr>
-						<td>Mr. Rajan</td>
-						<td>Kadel</td>
-						<td>CEO</td>
-					</tr>
-					<tr>
-						<td>Mr. Arun</td>
-						<td>Joshi</td>
-						<td>IT Head</td>
-					</tr>
-					<tr>
-						<td>Mr. Kiran</td>
-						<td>Shakya</td>
-						<td>Examination Department Head</td>
-					</tr>
-					<tr>
-						<td>Mrs. Pabina</td>
-						<td>Thapa</td>
-						<td>Student Service</td>
-					</tr>
-				</table>
-				</p>
+					An international university degree, the same as you would get if you were studying in the UK.
+					Business Service
+					The British College aims to potentially open doors for joint ventures or business partnerships.
+					In this regard we have a distinctive identity as the pioneering International College in Nepal. We offer internationally recognised degrees and courses which are relevant to the current job market, enhancing each and every student's employability.
 				<p>
-					<h3>Computer Forensics Lab</h3>
-					The British College provides a wide range of computing resources and support services. There are three computer laboratories at TBC with approximately 100 computers available. The College has a leased line with high-speed bandwidth to provide round the clock Internet access to students to enable them to remain connected with the information superhighway. Each computer has power back up. The Computer Lab is also equipped with HD Multimedia facilities.
-				</p>
 			</div>
+			<script language="JavaScript">
+			var i = 0;
+			var path = new Array();
+			 
+			// LIST OF IMAGES
+			path[0] = "Images/sports1.jpg";
+			path[1] = "Images/party1.jpg";
+			path[2] = "Images/sports2.jpg";
+			path[3] = "Images/party2.jpg";
+			path[4] = "Images/sports3.jpg";
+			path[5] = "Images/party3.jpg";
+			path[6] = "Images/sports4.jpg";
+			path[7] = "Images/party4.jpg";
+
+			function swapImage()
+			{
+			   document.slide.src = path[i];
+			   if(i < path.length - 1) i++; else i = 0;
+			   setTimeout("swapImage()",2000);
+			}
+			window.onload=swapImage();
+			</script>
 			<div id="footer">
-				<img src ="..//Images//acca1.jpg" alt="ACCA" width="800px" height="150px"> 
-				<!--The footer consist just an image same width as the container div-->
+					<img src ="Images/honors.jpg" alt="ACCA" width="800px" height="150px"> 
 			</div>
-		</div>	
 	</body>
 </html>
